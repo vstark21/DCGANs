@@ -2,23 +2,23 @@
 
 Implementing a basic **DCGAN** on MNIST digits data and CIFAR-10 data using Tensorflow :smile:.
 
-Generally **DCGANs** contains two networks, a **Generator** and a **Discriminator**. So as name says generator keeps on generating images by taking in some noise and discriminator distinguishes between original images and generated images. 
+Generally **DCGANs** contains two networks, a **Generator** and a **Discriminator**. So as name says generator keeps on generating images by taking in some noise and discriminator distinguishes between original images and generated images.
 
 ### Generator
 
-Generator takes in some noise as input and we need to follow following rules which are experimental observations as mentioned in [paper][2] for good results without much noise:
+Generator takes in some noise as input and we need to follow the following rules which are experimental observations as mentioned in [paper][2] for good results:
 
 * We need to use **Fractional strided convolution**(*or Transposed convolution*) to upsample so that it can learn its own upsampling.
-* We need to use **ReLU** activation in all layers except in last layer we use **tanh** activation.
-* We need to use **Batch Normalization** in all layers except output and we need not use dense layers on top of CNN layers as we need to return an image.
+* We need to use **ReLU** activation in all layers except in last layer where we use **tanh** activation.
+* We need to use **Batch Normalization** in all layers except output and we need not use dense layers on top of conv layers as we need to return an image.
 
 ### Discriminator
 
-Discriminator takes in images as input and we need to follow following rules which are experimental observations as mentioned in [paper][2] for good results without much noise:
+Discriminator takes in images as input and we need to follow following rules which are experimental observations as mentioned in [paper][2] for good results:
 
 * We need to use **strided convolution** instead of max-pooling layers to downsample so that it can learn its own downsampling.
-* We need to use **LeakyReLU** activation in all layers except in last layer we use **sigmoid** activation as this is used for binary classification.
-* We need to **Batch Normalization** in all layers except output and we need not use dense layers but in output layer we just use one hidden unit as output.
+* We need to use **LeakyReLU** activation with a leak of *0.2-0.3* in all layers except in last layer where we use **sigmoid** activation as this is used for binary classification task.
+* We need to **Batch Normalization** in all layers except output and we need not use dense layers but in the output layer we just use one unit.
 
 ## Results
 

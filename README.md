@@ -28,6 +28,8 @@ Discriminator takes in images as input and we need to follow following rules whi
     <small><i>GIFs created using generated images by generator.</i></small>
 </div>
 
+
+
 The one on the left was trained for *100 epochs* which took around *an hour* and the one on the right was trained for *40 epochs* which took around *one and half hour*.  
 
 ## References

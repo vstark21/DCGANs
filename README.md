@@ -40,3 +40,5 @@ The one on the left was trained for *100 epochs* which took around *an hour* and
 [1]:https://arxiv.org/abs/1406.2661
 [2]:https://arxiv.org/abs/1511.06434
 
+<div align="center"><smal>&copy <a href="https://github.com/vstark21">V I S H W A S</a></small></div>
+

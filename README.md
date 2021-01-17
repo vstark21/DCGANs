@@ -36,9 +36,9 @@ The one on the left was trained for *100 epochs* which took around *an hour* and
 
 ## References
 
-[ 1 ] [Ian Goodfellow et al., Generative Adversarial Networks][1]
+* [Ian Goodfellow et al., Generative Adversarial Networks][1]
 
-[ 2 ] [Alec Radford et al., Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks][2]
+* [Alec Radford et al., Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks][2]
 
 [1]:https://arxiv.org/abs/1406.2661
 [2]:https://arxiv.org/abs/1511.06434
